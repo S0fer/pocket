@@ -1,0 +1,33 @@
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.overlay *{
+    pointer-events: initial;
+}
+
+.overlay img{
+    width: 50px;
+}
+
+.overlay a{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+.overlay a img:hover{
+    animation: spin 2s;
+}
+
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}

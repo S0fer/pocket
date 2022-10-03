@@ -5,11 +5,11 @@ function Header() {
         <header>
             <img src={logo} alt="logo" style={{width: '50px',}} />
             <ul>
-                <li>Colaboradores</li>
-                <li>Contato</li>
-                <li>Home</li>
-                <li>Quem</li>
-                <li>Servicos</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quem">Quem Somos</a></li>
+                <li><a href="#colaboradores">Colaboradores</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </header>
     );

@@ -8,6 +8,10 @@
   color: var(--light-color);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--dark-color-blend);
 }
@@ -23,23 +27,24 @@ header{
   display: flex;
   padding: 2%;
   justify-content: space-between;
+  background: rgba(255,255,255,0.1);
 }
 
 header ul{
-  width: 90%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
 }
 
+header ul li a{
+  text-decoration: none;
+}
+
 footer{
   text-align: center;
   padding: 2%;
   justify-self: flex-end;
-  background-color: var(--dark-color-medium);
-}
-
-footer p, footer a{
-  font-size: smaller;
+  background-color: var(--dark-color);
 }

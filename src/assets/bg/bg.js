@@ -9,6 +9,7 @@ import poloshirt from './shirt-polo-shirt-svgrepo-com.svg'
 import shirt from './shirt-svgrepo-com.svg'
 import thread from './thread-fashion-svgrepo-com.svg'
 import trousers from './trousers-svgrepo-com.svg'
+import button from './button-button-svgrepo-com.svg'
 export const bg = {
     ball : ball,
     fabric : fabric,
@@ -21,4 +22,5 @@ export const bg = {
     shirt : shirt,
     thread : thread,
     trousers : trousers,
+    button: button,
 }
