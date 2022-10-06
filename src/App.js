@@ -4,7 +4,7 @@ import Footer from './components/utils/Footer';
 import Header from './components/utils/Header';
 import Loading from './components/utils/Loading';
 import Overlay from './components/utils/Overlay';
-import Home from './components/content/Home';
+import Content from './components/content/Content';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,7 +24,7 @@ function App() {
         :
         <>
           <Header />
-          <Home />
+          <Content />
           <Footer />
           <Overlay />
         </>

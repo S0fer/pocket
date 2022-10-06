@@ -1,8 +1,13 @@
+@import './colors.css';
+
 header {
     display: flex;
     padding: 2%;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px dashed var(--light-color-blend);
+    background-color: var(--primary-color);
+    background-image: url('../../src/assets/bg/fabric.png');
+    box-shadow: 0 0 0 4px #1F4C64, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
 header ul {
@@ -40,8 +45,8 @@ header .header_li a:before {
     left: 0;
     width: 99.5%;
     height: 2px;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
+    border-bottom: 2px dashed transparent;
+    border-left: 2px dashed transparent;
 }
 
 header .header_li a:after {
@@ -53,8 +58,8 @@ header .header_li a:after {
     left: 0;
     width: 99.5%;
     height: 2px;
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
+    border-top: 2px dashed transparent;
+    border-right: 2px dashed transparent;
 }
 
 header .header_li a:hover {
@@ -63,25 +68,35 @@ header .header_li a:hover {
 }
 
 header .header_li a:hover:before {
-    transition: 0.1s transform linear, 0.1s height linear 0.1s;
+    transition: 0.2s transform linear, 0.2s height linear 0.2s;
     transform: translateX(0);
-    height: 100%;
-    border-color: #1fbfac;
+    height: 200%;
+    border-color: #C8CDD6;
 }
 
 header .header_li a:hover:after {
-    transition: 0.1s transform linear 0.2s, 0.1s height linear 0.3s;
+    transition: 0.2s transform linear 0.4s, 0.2s height linear 0.6s;
     transform: translateX(0);
     height: 100%;
-    border-color: #1fbfac;
+    border-color: #C8CDD6;
 }
 
-.menu{
+.hidden{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    border: 2px dashed #1F4C64;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--dark-color);
+    background-image: url('../../src/assets/bg/fabric.png');
+    box-shadow: 0 0 0 4px var(--dark-color-blend), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    z-index: -1;
+    width: 90%;
+    margin: 0% 5%;
+}
+
+.menu, .hidden{
     display: none;
-}
-
-.teste{
-    display: block !important;
 }
 
 @media screen and (max-width: 768px){
@@ -89,6 +104,13 @@ header .header_li a:hover:after {
         display: none;
     }
     .menu{
+        display: contents;
+    }
+    header{
+        align-items: center;
+    }
+
+    .teste{
         display: block;
     }
 }

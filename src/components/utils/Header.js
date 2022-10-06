@@ -8,19 +8,21 @@ function Header() {
         myRef.current.classList.toggle("teste");
     }
     return (
-        <header>
-            <img src={logo} alt="logo" style={{width: '50px',}} />
-            <ul ref={myRef}>
-                <li className='header_li'><a href="#home">Home</a></li>
-                <li className='header_li'><a href="#quem">Quem Somos</a></li>
-                <li className='header_li'><a href="#colaboradores">Colaboradores</a></li>
-                <li className='header_li'><a href="#servicos">Serviços</a></li>
-                <li className='header_li'><a href="#contato">Contato</a></li>
-            </ul>
-            <div className='menu' onClick={handleClick}>
-                O
-            </div>
-        </header>
+        <>
+            <header>
+                <img src={logo} alt="logo" style={{width: '50px',}} />
+                <ul ref={myRef}>
+                    <li className='header_li'><a href="#home">Home</a></li>
+                    <li className='header_li'><a href="#quem">Quem Somos</a></li>
+                    <li className='header_li'><a href="#colaboradores">Colaboradores</a></li>
+                    <li className='header_li'><a href="#servicos">Serviços</a></li>
+                    <li className='header_li'><a href="#contato">Contato</a></li>
+                </ul>
+                <div className='menu' onClick={handleClick}>
+                    O
+                </div>
+            </header>
+        </>
     );
 }
 

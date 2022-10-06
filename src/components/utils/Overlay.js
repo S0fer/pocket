@@ -1,11 +1,11 @@
-import { bg } from "../../assets/bg/bg";
+import button from '../../assets/bg/button.png'
 import '../../style/Overlay.css'
 
 function Overlay() {
     return (
         <div className="overlay">
             <a href="#top">
-                <img src={bg.button} alt="button" />
+                <img src={button} alt="button" />
             </a>
         </div>
     );

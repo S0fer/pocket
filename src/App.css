@@ -26,7 +26,7 @@ html{
 
 body{
   overflow: overlay;
-  background-image: url('../src/assets/bg/fabric.png');
+  background-image: url('../src/assets/bg/black-linen.png');
   background-repeat: repeat;
   background-color: var(--primary-color-lighter);
 }
@@ -42,7 +42,10 @@ footer{
   text-align: center;
   padding: 2%;
   justify-self: flex-end;
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
+  background-image: url('../src/assets/bg/fabric.png');
+  border-top: 2px dashed var(--light-color-blend);
+  box-shadow: 0 0 0 4px #3E3E3E, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
 @media screen and (max-width: 768px){
