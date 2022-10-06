@@ -1,5 +1,4 @@
 import '../../style/Home.css'
-import Carousel from '../test/Test';
 
 function Home() {
     return (
@@ -7,7 +6,6 @@ function Home() {
             <div style={{zIndex:1}}>
                 Conteúdo
             </div>
-            <Carousel />
         </div>
     );
 }

@@ -12,7 +12,22 @@ html{
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body{
+  overflow: overlay;
+  background-image: url('../src/assets/bg/fabric.png');
+  background-repeat: repeat;
   background-color: var(--primary-color-lighter);
 }
 
@@ -23,28 +38,19 @@ body{
   justify-content: space-between;
 }
 
-header{
-  display: flex;
-  padding: 2%;
-  justify-content: space-between;
-  background: rgba(0,0,0,0.1);
-}
-
-header ul{
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-header ul li a{
-  text-decoration: none;
-}
-
 footer{
   text-align: center;
   padding: 2%;
   justify-self: flex-end;
   background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px){
+  footer *{
+    padding: 1%;
+    font-size: xx-small;
+  }
+  footer{
+    padding: 5%;
+  }
 }
